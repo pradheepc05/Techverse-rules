@@ -1,1 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TECHVERSE 2K26 | Official Rules & Regulations</title>
+<style>
+  :root{
+    --navy:#101827;
+    --blue:#2563eb;
+    --purple:#6d28d9;
+    --light:#f5f7fb;
+    --text:#202735;
+    --muted:#5f6b7a;
+    --border:#dfe5ef;
+    --white:#fff;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;
+    font-family:Inter,Segoe UI,Arial,sans-serif;
+    background:var(--light);
+    color:var(--text);
+    line-height:1.65;
+  }
+  .hero{
+    background:linear-gradient(135deg,var(--navy),#18253d 55%,var(--purple));
+    color:white;
+    padding:64px 24px 52px;
+    text-align:center;
+  }
+  .hero .university{
+    font-size:18px;
+    font-weight:700;
+    letter-spacing:2px;
+  }
+  .hero .department{
+    margin-top:5px;
+    font-size:15px;
+    opacity:.9;
+  }
+  .hero h1{
+    margin:22px 0 4px;
+    font-size:clamp(42px,8vw,76px);
+    letter-spacing:3px;
+    line-height:1;
+  }
+  .hero h2{
+    margin:10px 0 18px;
+    font-size:22px;
+    font-weight:500;
+    letter-spacing:1px;
+  }
+  .hero .tagline{
+    display:inline-block;
+    padding:8px 18px;
+    border:1px solid rgba(255,255,255,.3);
+    border-radius:999px;
+    font-weight:700;
+    letter-spacing:1px;
+  }
+  .container{
+    width:min(1100px,92%);
+    margin:32px auto 70px;
+  }
+  .competitions{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:18px;
+    margin-bottom:30px;
+  }
+  .competition{
+    background:var(--white);
+    border:1px solid var(--border);
+    border-radius:16px;
+    padding:22px;
+    box-shadow:0 8px 25px rgba(16,24,39,.06);
+  }
+  .competition .num{
+    color:var(--blue);
+    font-weight:800;
+    font-size:13px;
+    letter-spacing:1px;
+  }
+  .competition h3{
+    margin:7px 0 5px;
+    font-size:21px;
+  }
+  .competition p{
+    margin:0;
+    color:var(--muted);
+  }
+  .important{
+    background:linear-gradient(135deg,#eef2ff,#f7f3ff);
+    border:2px solid #c7d2fe;
+    border-radius:18px;
+    padding:28px;
+    margin-bottom:28px;
+  }
+  .important h2{margin-top:0}
+  section{
+    background:var(--white);
+    border:1px solid var(--border);
+    border-radius:18px;
+    padding:30px;
+    margin:22px 0;
+    box-shadow:0 7px 22px rgba(16,24,39,.045);
+  }
+  section h2{
+    margin:0 0 8px;
+    color:var(--navy);
+    font-size:25px;
+    border-bottom:2px solid #edf0f5;
+    padding-bottom:10px;
+  }
+  section h3{
+    margin:6px 0 18px;
+    color:var(--purple);
+    font-size:18px;
+  }
+  .rule{
+    margin:9px 0;
+  }
+  .rule strong{color:var(--navy)}
+  ul{
+    margin-top:8px;
+    padding-left:24px;
+  }
+  .final-rule{
+    border-left:5px solid var(--purple);
+    background:#faf8ff;
+    padding:20px 22px;
+    border-radius:10px;
+    font-weight:600;
+  }
+  footer{
+    text-align:center;
+    color:var(--muted);
+    padding:25px;
+    font-size:14px;
+  }
+  @media(max-width:800px){
+    .competitions{grid-template-columns:1fr}
+    section,.important{padding:22px}
+  }
+  @media print{
+    body{background:white}
+    .hero{padding:35px 20px}
+    .container{width:100%;margin:15px auto}
+    section,.important,.competition{
+      box-shadow:none;
+      break-inside:avoid;
+    }
+    .competitions{grid-template-columns:1fr 1fr 1fr}
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="university">ANNAMALAI UNIVERSITY</div>
+  <div class="department">Department of Computer and Information Science</div>
+  <h1>TECHVERSE 2K26</h1>
+  <h2>OFFICIAL RULES &amp; REGULATIONS</h2>
+  <div class="tagline">EXPLORE • CREATE • INNOVATE</div>
+</header>
+
+<main class="container">
+
+  <div class="competitions">
+    <div class="competition">
+      <div class="num">01 — TECHNOVA</div>
+      <h3>Technical Challenge</h3>
+      <p>TechQuiz + DebugX</p>
+    </div>
+    <div class="competition">
+      <div class="num">02 — PROJECTX</div>
+      <h3>IDEA → PROJECT → PRESENTATION</h3>
+      <p>Technology-Based Project Competition</p>
+    </div>
+    <div class="competition">
+      <div class="num">03 — TECHTALKX</div>
+      <h3>Technical Communication</h3>
+      <p>Technical Talk + Tech Defence + Q&amp;A</p>
+    </div>
+  </div>
+
+  <div class="important">
+    <h2>IMPORTANT RULES</h2>
+    <div class="rule"><strong>1. Team Composition:</strong> Each team must consist of exactly 5 members from the same class. No additional or substitute members are permitted.</div>
+    <div class="rule"><strong>2. Participation in All Events:</strong> The same 5 registered team members must participate in all three competitions — TECHNOVA, PROJECTX, and TECHTALKX. Team members cannot be changed between competitions.</div>
+    <div class="rule"><strong>3. Competition-Specific Rules:</strong> The Organizing Committee will announce the rules, procedures, time limits, and requirements for each competition before the respective competition begins. All participants must follow the announced rules.</div>
+    <div class="rule"><strong>4. Staff/Judges' Decision:</strong> The decision of the staff/judges regarding the competition results is final and must be accepted by all participants.</div>
+    <div class="rule"><strong>5. Dress Code:</strong> Participants must wear formal attire throughout the event and follow the dress code specified by the Organizing Committee.</div>
+  </div>
+
+  <section>
+    <h2>1. GENERAL ELIGIBILITY</h2>
+    <div class="rule"><strong>1.1</strong> The competition is open to eligible students of the <strong>Department of Computer and Information Science, Annamalai University</strong>.</div>
+    <div class="rule"><strong>1.2</strong> Each team must consist of <strong>exactly 5 members</strong>.</div>
+    <div class="rule"><strong>1.3</strong> All participants must carry a valid <strong>College/Student ID Card</strong> and present it when required.</div>
+    <div class="rule"><strong>1.4</strong> Participants must complete the official registration process before the announced registration deadline.</div>
+    <div class="rule"><strong>1.5</strong> Participants must report to the venue within the specified reporting time and follow the instructions of the Organizing Committee.</div>
+  </section>
+
+  <section>
+    <h2>2. REGISTRATION RULES</h2>
+    <div class="rule"><strong>2.1</strong> Registration must be completed through the <strong>official registration form</strong> before the announced deadline.</div>
+    <div class="rule"><strong>2.2</strong> Each class is permitted to register <strong>only one team</strong>, consisting of exactly <strong>5 members</strong>.</div>
+    <div class="rule"><strong>2.3</strong> The registered team will participate as the <strong>same team in all three competitions</strong> — TECHNOVA, PROJECTX, and TECHTALKX.</div>
+    <div class="rule"><strong>2.4</strong> Each team must nominate <strong>one Team Leader</strong> as the primary contact person for communication with the Organizing Committee.</div>
+    <div class="rule"><strong>2.5</strong> Participants must provide <strong>complete and accurate information</strong> during registration. Any false, incomplete, or misleading information may result in cancellation of registration or disqualification.</div>
+  </section>
+
+  <section>
+    <h2>3. GENERAL EVENT RULES</h2>
+    <div class="rule"><strong>3.1</strong> All participants must follow the instructions given by the Organizing Committee, coordinators, staff, and judges.</div>
+    <div class="rule"><strong>3.2</strong> Participants must maintain discipline and professional conduct throughout the event.</div>
+    <div class="rule"><strong>3.3</strong> Participants must not disturb, obstruct, or interfere with another team's participation.</div>
+    <div class="rule"><strong>3.4</strong> Participants are responsible for bringing the required equipment, software, files, and other materials specified for their competitions.</div>
+    <div class="rule"><strong>3.5</strong> Any situation not specifically covered by these rules will be handled by the Organizing Committee.</div>
+  </section>
+
+  <section>
+    <h2>4. TEAM RULES</h2>
+    <div class="rule"><strong>4.1</strong> Each team must have exactly <strong>5 registered members from the same class</strong>.</div>
+    <div class="rule"><strong>4.2</strong> The same 5 registered members must participate in <strong>all three competitions</strong>.</div>
+    <div class="rule"><strong>4.3</strong> Team members cannot be changed between competitions.</div>
+    <div class="rule"><strong>4.4</strong> All team members are expected to contribute to the competitions and understand the work presented by their team.</div>
+    <div class="rule"><strong>4.5</strong> Team members must follow the instructions given by the Team Leader and Organizing Committee during competition activities.</div>
+  </section>
+
+  <section>
+    <h2>5. PARTICIPANT REQUIREMENTS</h2>
+    <p>Participants are required to bring:</p>
+    <ul>
+      <li>College/Student ID Card</li>
+      <li>Mobile Phone</li>
+      <li>Laptop and Charger</li>
+      <li>Internet Connection</li>
+      <li>Required Software</li>
+    </ul>
+    <div class="rule"><strong>5.1</strong> Participants are responsible for the proper functioning and readiness of their personal devices.</div>
+    <div class="rule"><strong>5.2</strong> Participants must ensure that required software is installed before the competition where applicable.</div>
+    <div class="rule"><strong>5.3</strong> The Organizing Committee is not responsible for problems caused by a participant's personal device, software, files, or charger.</div>
+  </section>
+
+  <section>
+    <h2>6. TECHNOVA</h2>
+    <h3>TECHNICAL CHALLENGE — TechQuiz + DebugX</h3>
+    <div class="rule"><strong>6.1</strong> TECHNOVA consists of two components: <strong>TechQuiz</strong> and <strong>DebugX</strong>.</div>
+    <div class="rule"><strong>6.2</strong> Participants must follow the instructions provided before each component begins.</div>
+    <div class="rule"><strong>6.3</strong> The time limit, question format, permitted resources, and scoring method will be announced by the Organizing Committee.</div>
+    <div class="rule"><strong>6.4</strong> Participants must complete each task within the specified time.</div>
+    <div class="rule"><strong>6.5</strong> The evaluation will be conducted according to the rules announced for TECHNOVA.</div>
+  </section>
+
+  <section>
+    <h2>7. TECHNOVA — TECHQUIZ</h2>
+    <div class="rule"><strong>7.1</strong> TechQuiz will test participants' technical and computer-related knowledge.</div>
+    <div class="rule"><strong>7.2</strong> Questions may cover programming, databases, networking, operating systems, cybersecurity, artificial intelligence, algorithms, web technologies, and other relevant technical subjects.</div>
+    <div class="rule"><strong>7.3</strong> Participants must submit their answers within the specified time.</div>
+    <div class="rule"><strong>7.4</strong> Participants must not communicate with other teams during restricted quiz rounds.</div>
+    <div class="rule"><strong>7.5</strong> Mobile phones, internet access, AI tools, notes, or other resources may be restricted according to the rules announced before the round.</div>
+  </section>
+
+  <section>
+    <h2>8. TECHNOVA — DEBUGX</h2>
+    <div class="rule"><strong>8.1</strong> DebugX will test participants' ability to identify and correct programming errors.</div>
+    <div class="rule"><strong>8.2</strong> Problems may include syntax, logical, runtime, output, or algorithmic errors.</div>
+    <div class="rule"><strong>8.3</strong> Participants must solve the assigned debugging problems within the specified time.</div>
+    <div class="rule"><strong>8.4</strong> Solutions will be evaluated based on correctness and the criteria announced for the round.</div>
+    <div class="rule"><strong>8.5</strong> Participants may be required to explain their solution or correction to the judges.</div>
+  </section>
+
+  <section>
+    <h2>9. PROJECTX</h2>
+    <h3>IDEA → PROJECT → PRESENTATION</h3>
+    <div class="rule"><strong>9.1</strong> PROJECTX requires each team to develop and present a <strong>technology-based project</strong> with a clearly defined problem, proposed solution, and technical implementation.</div>
+    <div class="rule"><strong>9.2</strong> Projects may involve areas such as <strong>Web Development, Mobile Applications, Artificial Intelligence, Machine Learning, Cybersecurity, Automation, IoT, Software Applications, Database Systems</strong>, or other relevant technology-based solutions.</div>
+    <div class="rule"><strong>9.3</strong> Teams must be able to explain their project's <strong>idea, purpose, features, technology stack, implementation, and practical applications</strong>.</div>
+    <div class="rule"><strong>9.4</strong> Teams must bring all required <strong>project files, source code, devices, software, and supporting materials</strong> and ensure that the project is ready for demonstration. Teams are advised to maintain a backup of important project files.</div>
+    <div class="rule"><strong>9.5</strong> Each team must present and demonstrate its project within the <strong>time limit announced by the Organizing Committee</strong>. The presentation should clearly cover the <strong>IDEA → PROJECT → PRESENTATION</strong> flow.</div>
+    <div class="rule"><strong>9.6</strong> Judges may ask questions regarding the project's <strong>architecture, programming, database, algorithms, security, implementation, limitations, and future improvements</strong>.</div>
+    <div class="rule"><strong>9.7</strong> Judges may request a <strong>live demonstration</strong> of specific features or ask any team member to explain the work presented.</div>
+    <div class="rule"><strong>9.8</strong> Failure to demonstrate or explain a claimed feature may affect the evaluation according to the announced criteria.</div>
+    <div class="rule"><strong>9.9</strong> The project must not contain <strong>unlawful, harmful, or inappropriate content</strong> and must comply with all requirements announced by the Organizing Committee.</div>
+    <div class="rule"><strong>9.10</strong> Exceeding the allotted presentation time or failing to follow the announced PROJECTX requirements may result in a penalty according to the competition rules.</div>
+  </section>
+
+  <section>
+    <h2>10. TECHTALKX</h2>
+    <h3>TECHNICAL COMMUNICATION — Technical Talk + Tech Defence + Q&amp;A</h3>
+    <div class="rule"><strong>10.1</strong> TECHTALKX evaluates participants' <strong>technical knowledge, communication, presentation skills, and ability to respond to technical questions</strong>.</div>
+    <div class="rule"><strong>10.2</strong> The selected topic must be <strong>technically relevant</strong> and must comply with the requirements announced by the Organizing Committee.</div>
+    <div class="rule"><strong>10.3</strong> The presentation should clearly explain the <strong>introduction, technical concepts, working/practical applications, advantages, limitations, and conclusion</strong> of the selected topic.</div>
+    <div class="rule"><strong>10.4</strong> Participants may use <strong>presentation slides or other approved visual aids</strong>. All presentation content must be relevant to the selected topic, and appropriate sources or references should be acknowledged where applicable.</div>
+    <div class="rule"><strong>10.5</strong> Participants must complete the <strong>Technical Talk within the time limit</strong> announced by the Organizing Committee.</div>
+    <div class="rule"><strong>10.6</strong> After the Technical Talk, the judges may conduct a <strong>Tech Defence and Q&amp;A session</strong>.</div>
+    <div class="rule"><strong>10.7</strong> Judges may ask questions about the presented topic, including <strong>technical concepts, working principles, applications, advantages, limitations, practical examples, and future developments</strong>.</div>
+    <div class="rule"><strong>10.8</strong> Participants must provide <strong>clear, relevant, and technically accurate answers</strong>. Judges may ask follow-up questions or request further explanation.</div>
+    <div class="rule"><strong>10.9</strong> Participants must demonstrate genuine understanding of the topic and should not merely read the presentation material.</div>
+    <div class="rule"><strong>10.10</strong> The Technical Talk, Tech Defence, and Q&amp;A will be evaluated according to the <strong>criteria announced by the Organizing Committee</strong>.</div>
+    <div class="rule"><strong>10.11</strong> Participants must maintain <strong>professional communication and respectful conduct</strong> throughout the presentation and Q&amp;A session.</div>
+    <div class="rule"><strong>10.12</strong> Exceeding the allotted time or failing to follow the announced TECHTALKX requirements may result in a penalty according to the competition rules.</div>
+  </section>
+
+  <section>
+    <h2>11. DISQUALIFICATION</h2>
+    <div class="rule"><strong>11.1</strong> Cheating or plagiarism.</div>
+    <div class="rule"><strong>11.2</strong> Providing false or misleading registration information.</div>
+    <div class="rule"><strong>11.3</strong> Using unauthorized assistance or resources.</div>
+    <div class="rule"><strong>11.4</strong> Serious misconduct or deliberate disruption of the event.</div>
+    <div class="rule"><strong>11.5</strong> Unauthorized access, tampering, or interference with competition systems.</div>
+  </section>
+
+  <section>
+    <h2>12. CERTIFICATES &amp; PRIZES</h2>
+    <div class="rule"><strong>12.1</strong> Certificates will be awarded according to the official event policy.</div>
+    <div class="rule"><strong>12.2</strong> Prizes will be awarded to the announced <strong>Winners and Runners-Up</strong>.</div>
+    <div class="rule"><strong>12.3</strong> Prize distribution will take place at the designated time and venue.</div>
+    <div class="rule"><strong>12.4</strong> Participants must follow the instructions provided during the certificate and prize distribution.</div>
+    <div class="rule"><strong>12.5</strong> Prize-related matters will be handled by the Organizing Committee according to the approved event arrangements.</div>
+  </section>
+
+  <section>
+    <h2>13. ORGANIZING COMMITTEE</h2>
+    <div class="rule"><strong>13.1</strong> The Organizing Committee is responsible for the overall conduct of <strong>TECHVERSE 2K26</strong>.</div>
+    <div class="rule"><strong>13.2</strong> The Committee will announce the specific rules and procedures for each competition.</div>
+    <div class="rule"><strong>13.3</strong> The Committee may issue instructions or clarifications when necessary.</div>
+    <div class="rule"><strong>13.4</strong> Participants must comply with all officially announced instructions.</div>
+    <div class="rule"><strong>13.5</strong> The Committee will maintain the official records of the event.</div>
+  </section>
+
+  <section>
+    <h2>14. FINAL RULE</h2>
+    <div class="final-rule">
+      The rules and regulations announced by the Organizing Committee for each competition are final and must be followed by all participants. The decision of the staff/judges regarding the competition results is final. The Organizing Committee reserves the right to interpret, clarify, modify, or enforce the rules when necessary for the smooth conduct of TECHVERSE 2K26.
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  TECHVERSE 2K26 • Department of Computer and Information Science • Annamalai University
+</footer>
+
+</body>
+</html>
 

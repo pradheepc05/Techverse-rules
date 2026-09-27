@@ -3,349 +3,1859 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TECHVERSE 2K26 | Official Rules & Regulations</title>
+
+<title>TECHVERSE 2K26 | Official Competition Rules</title>
+
 <style>
-  :root{
-    --navy:#101827;
-    --blue:#2563eb;
-    --purple:#6d28d9;
-    --light:#f5f7fb;
-    --text:#202735;
-    --muted:#5f6b7a;
-    --border:#dfe5ef;
-    --white:#fff;
-  }
-  *{box-sizing:border-box}
-  html{scroll-behavior:smooth}
-  body{
-    margin:0;
-    font-family:Inter,Segoe UI,Arial,sans-serif;
-    background:var(--light);
-    color:var(--text);
-    line-height:1.65;
-  }
-  .hero{
-    background:linear-gradient(135deg,var(--navy),#18253d 55%,var(--purple));
-    color:white;
-    padding:64px 24px 52px;
-    text-align:center;
-  }
-  .hero .university{
-    font-size:18px;
-    font-weight:700;
-    letter-spacing:2px;
-  }
-  .hero .department{
-    margin-top:5px;
-    font-size:15px;
-    opacity:.9;
-  }
-  .hero h1{
-    margin:22px 0 4px;
-    font-size:clamp(42px,8vw,76px);
-    letter-spacing:3px;
-    line-height:1;
-  }
-  .hero h2{
-    margin:10px 0 18px;
-    font-size:22px;
-    font-weight:500;
-    letter-spacing:1px;
-  }
-  .hero .tagline{
-    display:inline-block;
-    padding:8px 18px;
-    border:1px solid rgba(255,255,255,.3);
-    border-radius:999px;
-    font-weight:700;
-    letter-spacing:1px;
-  }
-  .container{
-    width:min(1100px,92%);
-    margin:32px auto 70px;
-  }
-  .competitions{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:18px;
-    margin-bottom:30px;
-  }
-  .competition{
-    background:var(--white);
-    border:1px solid var(--border);
-    border-radius:16px;
-    padding:22px;
-    box-shadow:0 8px 25px rgba(16,24,39,.06);
-  }
-  .competition .num{
-    color:var(--blue);
-    font-weight:800;
-    font-size:13px;
-    letter-spacing:1px;
-  }
-  .competition h3{
-    margin:7px 0 5px;
-    font-size:21px;
-  }
-  .competition p{
-    margin:0;
-    color:var(--muted);
-  }
-  .important{
-    background:linear-gradient(135deg,#eef2ff,#f7f3ff);
-    border:2px solid #c7d2fe;
-    border-radius:18px;
-    padding:28px;
-    margin-bottom:28px;
-  }
-  .important h2{margin-top:0}
-  section{
-    background:var(--white);
-    border:1px solid var(--border);
-    border-radius:18px;
-    padding:30px;
-    margin:22px 0;
-    box-shadow:0 7px 22px rgba(16,24,39,.045);
-  }
-  section h2{
-    margin:0 0 8px;
-    color:var(--navy);
-    font-size:25px;
-    border-bottom:2px solid #edf0f5;
-    padding-bottom:10px;
-  }
-  section h3{
-    margin:6px 0 18px;
-    color:var(--purple);
-    font-size:18px;
-  }
-  .rule{
-    margin:9px 0;
-  }
-  .rule strong{color:var(--navy)}
-  ul{
-    margin-top:8px;
-    padding-left:24px;
-  }
-  .final-rule{
-    border-left:5px solid var(--purple);
-    background:#faf8ff;
-    padding:20px 22px;
-    border-radius:10px;
-    font-weight:600;
-  }
-  footer{
-    text-align:center;
-    color:var(--muted);
-    padding:25px;
-    font-size:14px;
-  }
-  @media(max-width:800px){
-    .competitions{grid-template-columns:1fr}
-    section,.important{padding:22px}
-  }
-  @media print{
-    body{background:white}
-    .hero{padding:35px 20px}
-    .container{width:100%;margin:15px auto}
-    section,.important,.competition{
-      box-shadow:none;
-      break-inside:avoid;
+:root {
+    --navy: #102A43;
+    --blue: #176B9A;
+    --cyan: #18A6C8;
+    --ink: #17212B;
+    --muted: #5D6B78;
+    --line: #DCE5EC;
+    --soft: #F4F8FB;
+    --white: #FFFFFF;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: #EAF0F5;
+    color: var(--ink);
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+    line-height: 1.55;
+}
+
+/* =========================
+   A4 PAGE
+========================= */
+
+.page {
+    width: 210mm;
+    min-height: 297mm;
+    margin: 18px auto;
+    padding: 17mm 16mm;
+    background: #fff;
+    box-shadow: 0 12px 35px rgba(16, 42, 67, 0.12);
+    position: relative;
+}
+
+/* =========================
+   COVER
+========================= */
+
+.cover {
+    min-height: 297mm;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-top: 9px solid var(--navy);
+}
+
+.brand {
+    display: inline-block;
+    color: var(--blue);
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+}
+
+.cover h1 {
+    margin: 14px 0 4px;
+    color: var(--navy);
+    font-size: 43px;
+    line-height: 1.05;
+    letter-spacing: 1px;
+}
+
+.tagline {
+    color: var(--blue);
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.cover-title {
+    margin-top: 20px;
+    font-size: 21px;
+    font-weight: 700;
+    color: #334E68;
+}
+
+.meta {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-top: 34px;
+}
+
+.meta-card {
+    padding: 15px 16px;
+    background: var(--soft);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+}
+
+.meta-card small {
+    display: block;
+    color: var(--blue);
+    font-size: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    margin-bottom: 4px;
+}
+
+.meta-card strong {
+    font-size: 15px;
+}
+
+.cover-note {
+    margin-top: 28px;
+    padding: 17px 18px;
+    border-left: 5px solid var(--cyan);
+    background: #F1FAFD;
+    border-radius: 8px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    padding-top: 10px;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 10px;
+}
+
+/* =========================
+   SECTIONS
+========================= */
+
+.section {
+    margin-bottom: 28px;
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 0 0 15px;
+    padding-bottom: 9px;
+    border-bottom: 2px solid #DDEAF2;
+}
+
+.section-number {
+    min-width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background: var(--navy);
+    color: #fff;
+    font-size: 13px;
+    font-weight: 800;
+}
+
+h2 {
+    margin: 0;
+    color: var(--navy);
+    font-size: 22px;
+}
+
+h3 {
+    margin: 21px 0 8px;
+    color: var(--blue);
+    font-size: 16px;
+}
+
+h4 {
+    margin: 15px 0 6px;
+    color: var(--navy);
+    font-size: 14px;
+}
+
+p {
+    margin: 7px 0 11px;
+}
+
+ol,
+ul {
+    margin: 7px 0 14px;
+    padding-left: 25px;
+}
+
+li {
+    margin: 5px 0;
+}
+
+/* =========================
+   IMPORTANT RULES
+========================= */
+
+.important {
+    border: 1px solid #D5E4ED;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.important-item {
+    padding: 17px 18px;
+    border-bottom: 1px solid var(--line);
+}
+
+.important-item:last-child {
+    border-bottom: 0;
+}
+
+.important-item h3 {
+    margin: 0 0 7px;
+    color: var(--navy);
+    font-size: 14px;
+    letter-spacing: 0.2px;
+}
+
+.badge {
+    display: inline-block;
+    margin-bottom: 7px;
+    padding: 4px 9px;
+    background: #EAF6FA;
+    color: var(--blue);
+    border-radius: 999px;
+    font-size: 10px;
+    font-weight: 800;
+}
+
+/* =========================
+   CARDS / CALLOUTS
+========================= */
+
+.rule-card {
+    margin: 11px 0;
+    padding: 15px 16px;
+    background: #FAFCFD;
+    border: 1px solid var(--line);
+    border-radius: 9px;
+}
+
+.rule-head {
+    color: var(--navy);
+    font-weight: 800;
+    font-size: 14px;
+}
+
+.callout {
+    margin: 12px 0;
+    padding: 13px 15px;
+    background: var(--soft);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+}
+
+/* =========================
+   TABLES
+========================= */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12px 0 18px;
+    font-size: 12.5px;
+}
+
+th {
+    background: var(--navy);
+    color: #fff;
+    text-align: left;
+    padding: 10px 11px;
+}
+
+td {
+    border: 1px solid var(--line);
+    padding: 9px 11px;
+    vertical-align: top;
+}
+
+tbody tr:nth-child(even) td {
+    background: #F8FAFC;
+}
+
+/* =========================
+   PROJECT DOMAINS
+========================= */
+
+.domain {
+    margin: 13px 0;
+    padding: 14px 15px;
+    border: 1px solid var(--line);
+    border-radius: 9px;
+}
+
+.domain h4 {
+    margin: 0 0 8px;
+    color: var(--blue);
+}
+
+.domain p {
+    margin: 5px 0;
+}
+
+/* =========================
+   COORDINATION
+========================= */
+
+.coord {
+    padding: 18px;
+    background: linear-gradient(
+        135deg,
+        #F5F9FC,
+        #EEF7FA
+    );
+    border: 1px solid #D5E4ED;
+    border-radius: 12px;
+}
+
+/* =========================
+   SIGNATURE
+========================= */
+
+.signature {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+    margin-top: 48px;
+}
+
+.signature .line {
+    border-top: 1px solid #718096;
+    padding-top: 8px;
+    font-size: 11px;
+}
+
+/* =========================
+   PRINT
+========================= */
+
+.no-break {
+    page-break-inside: avoid;
+}
+
+.page-break {
+    page-break-before: always;
+}
+
+@media print {
+
+    body {
+        background: #fff;
     }
-    .competitions{grid-template-columns:1fr 1fr 1fr}
-  }
+
+    .page {
+        width: auto;
+        min-height: auto;
+        margin: 0;
+        box-shadow: none;
+    }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 900px) {
+
+    .page {
+        width: 100%;
+        margin: 0;
+        padding: 30px 22px;
+        box-shadow: none;
+    }
+
+    .meta {
+        grid-template-columns: 1fr;
+    }
+
+    .signature {
+        grid-template-columns: 1fr;
+    }
+}
 </style>
 </head>
+
 <body>
 
-<header class="hero">
-  <div class="university">ANNAMALAI UNIVERSITY</div>
-  <div class="department">Department of Computer and Information Science</div>
-  <h1>TECHVERSE 2K26</h1>
-  <h2>OFFICIAL RULES &amp; REGULATIONS</h2>
-  <div class="tagline">EXPLORE • CREATE • INNOVATE</div>
-</header>
+<!-- =====================================================
+     COVER PAGE
+===================================================== -->
 
-<main class="container">
+<section class="page cover">
 
-  <div class="competitions">
-    <div class="competition">
-      <div class="num">01 — TECHNOVA</div>
-      <h3>Technical Challenge</h3>
-      <p>TechQuiz + DebugX</p>
+    <div>
+
+        <div class="brand">
+            ANNAMALAI UNIVERSITY
+        </div>
+
+        <h1>
+            TECHVERSE 2K26
+        </h1>
+
+        <div class="tagline">
+            EXPLORE • CREATE • INNOVATE
+        </div>
+
+        <div class="cover-title">
+            OFFICIAL COMPETITION RULES
+        </div>
+
+        <div class="meta">
+
+            <div class="meta-card">
+                <small>Department</small>
+                <strong>
+                    Department of Computer and Information Science
+                </strong>
+            </div>
+
+            <div class="meta-card">
+                <small>Event Type</small>
+                <strong>
+                    In-Campus Competition
+                </strong>
+            </div>
+
+            <div class="meta-card">
+                <small>Date</small>
+                <strong>
+                    30 September 2026
+                </strong>
+            </div>
+
+            <div class="meta-card">
+                <small>Time</small>
+                <strong>
+                    9:00 AM – 4:30 PM
+                </strong>
+            </div>
+
+        </div>
+
+        <div class="cover-note">
+
+            <strong>TECHVERSE 2K26</strong><br>
+
+            A technology and innovation competition conducted by the
+            Department of Computer and Information Science,
+            Annamalai University.
+
+        </div>
+
     </div>
-    <div class="competition">
-      <div class="num">02 — PROJECTX</div>
-      <h3>IDEA → PROJECT → PRESENTATION</h3>
-      <p>Technology-Based Project Competition</p>
+
+    <div class="footer">
+        TECHVERSE 2K26 • Official Competition Rules •
+        Department of Computer and Information Science
     </div>
-    <div class="competition">
-      <div class="num">03 — TECHTALKX</div>
-      <h3>Technical Communication</h3>
-      <p>Technical Talk + Tech Defence + Q&amp;A</p>
+
+</section>
+
+
+<!-- =====================================================
+     IMPORTANT RULES
+===================================================== -->
+
+<section class="page">
+
+    <div class="section">
+
+        <div class="section-title">
+
+            <div class="section-number">
+                01
+            </div>
+
+            <h2>
+                IMPORTANT RULES
+            </h2>
+
+        </div>
+
+
+        <div class="important">
+
+
+            <!-- RULE 01 -->
+
+            <div class="important-item no-break">
+
+                <span class="badge">
+                    01 — TEAM COMPOSITION
+                </span>
+
+                <h3>
+                    Team Composition
+                </h3>
+
+                <p>
+                    Each team must consist of exactly
+                    <strong>5 members from the same class</strong>.
+                </p>
+
+                <p>
+                    No additional or substitute members are permitted.
+                </p>
+
+            </div>
+
+
+            <!-- RULE 02 -->
+
+            <div class="important-item no-break">
+
+                <span class="badge">
+                    02 — PARTICIPATION IN ALL EVENTS
+                </span>
+
+                <h3>
+                    Participation in All Events
+                </h3>
+
+                <p>
+                    The same
+                    <strong>5 registered team members</strong>
+                    must participate in all three competitions:
+                </p>
+
+                <ul>
+
+                    <li>
+                        <strong>TECHNOVA</strong>
+                    </li>
+
+                    <li>
+                        <strong>PROJECTX</strong>
+                    </li>
+
+                    <li>
+                        <strong>TECHTALKX</strong>
+                    </li>
+
+                </ul>
+
+                <p>
+                    Team members cannot be changed between competitions.
+                </p>
+
+            </div>
+
+
+            <!-- RULE 03 -->
+
+            <div class="important-item no-break">
+
+                <span class="badge">
+                    03 — COMPETITION-SPECIFIC RULES
+                </span>
+
+                <h3>
+                    Competition-Specific Rules
+                </h3>
+
+                <p>
+                    The Organizing Committee will announce the rules,
+                    procedures, time limits, and requirements for each
+                    competition before the respective competition begins.
+                </p>
+
+                <p>
+                    All participants must follow the announced rules.
+                </p>
+
+            </div>
+
+
+            <!-- RULE 04 -->
+
+            <div class="important-item no-break">
+
+                <span class="badge">
+                    04 — STAFF / JUDGES' DECISION
+                </span>
+
+                <h3>
+                    Staff / Judges' Decision
+                </h3>
+
+                <p>
+                    The decision of the
+                    <strong>Staff/Judges</strong>
+                    regarding the competition results is final and
+                    must be accepted by all participants.
+                </p>
+
+            </div>
+
+
+            <!-- RULE 05 -->
+
+            <div class="important-item no-break">
+
+                <span class="badge">
+                    05 — DRESS CODE
+                </span>
+
+                <h3>
+                    Dress Code
+                </h3>
+
+                <p>
+                    Participants must wear
+                    <strong>formal attire throughout the event</strong>
+                    and follow the dress code specified by the
+                    Organizing Committee.
+                </p>
+
+            </div>
+
+        </div>
+
     </div>
-  </div>
 
-  <div class="important">
-    <h2>IMPORTANT RULES</h2>
-    <div class="rule"><strong>1. Team Composition:</strong> Each team must consist of exactly 5 members from the same class. No additional or substitute members are permitted.</div>
-    <div class="rule"><strong>2. Participation in All Events:</strong> The same 5 registered team members must participate in all three competitions — TECHNOVA, PROJECTX, and TECHTALKX. Team members cannot be changed between competitions.</div>
-    <div class="rule"><strong>3. Competition-Specific Rules:</strong> The Organizing Committee will announce the rules, procedures, time limits, and requirements for each competition before the respective competition begins. All participants must follow the announced rules.</div>
-    <div class="rule"><strong>4. Staff/Judges' Decision:</strong> The decision of the staff/judges regarding the competition results is final and must be accepted by all participants.</div>
-    <div class="rule"><strong>5. Dress Code:</strong> Participants must wear formal attire throughout the event and follow the dress code specified by the Organizing Committee.</div>
-  </div>
 
-  <section>
-    <h2>1. GENERAL ELIGIBILITY</h2>
-    <div class="rule"><strong>1.1</strong> The competition is open to eligible students of the <strong>Department of Computer and Information Science, Annamalai University</strong>.</div>
-    <div class="rule"><strong>1.2</strong> Each team must consist of <strong>exactly 5 members</strong>.</div>
-    <div class="rule"><strong>1.3</strong> All participants must carry a valid <strong>College/Student ID Card</strong> and present it when required.</div>
-    <div class="rule"><strong>1.4</strong> Participants must complete the official registration process before the announced registration deadline.</div>
-    <div class="rule"><strong>1.5</strong> Participants must report to the venue within the specified reporting time and follow the instructions of the Organizing Committee.</div>
-  </section>
+    <!-- GENERAL RULES -->
 
-  <section>
-    <h2>2. REGISTRATION RULES</h2>
-    <div class="rule"><strong>2.1</strong> Registration must be completed through the <strong>official registration form</strong> before the announced deadline.</div>
-    <div class="rule"><strong>2.2</strong> Each class is permitted to register <strong>only one team</strong>, consisting of exactly <strong>5 members</strong>.</div>
-    <div class="rule"><strong>2.3</strong> The registered team will participate as the <strong>same team in all three competitions</strong> — TECHNOVA, PROJECTX, and TECHTALKX.</div>
-    <div class="rule"><strong>2.4</strong> Each team must nominate <strong>one Team Leader</strong> as the primary contact person for communication with the Organizing Committee.</div>
-    <div class="rule"><strong>2.5</strong> Participants must provide <strong>complete and accurate information</strong> during registration. Any false, incomplete, or misleading information may result in cancellation of registration or disqualification.</div>
-  </section>
+    <div class="section">
 
-  <section>
-    <h2>3. GENERAL EVENT RULES</h2>
-    <div class="rule"><strong>3.1</strong> All participants must follow the instructions given by the Organizing Committee, coordinators, staff, and judges.</div>
-    <div class="rule"><strong>3.2</strong> Participants must maintain discipline and professional conduct throughout the event.</div>
-    <div class="rule"><strong>3.3</strong> Participants must not disturb, obstruct, or interfere with another team's participation.</div>
-    <div class="rule"><strong>3.4</strong> Participants are responsible for bringing the required equipment, software, files, and other materials specified for their competitions.</div>
-    <div class="rule"><strong>3.5</strong> Any situation not specifically covered by these rules will be handled by the Organizing Committee.</div>
-  </section>
+        <div class="section-title">
 
-  <section>
-    <h2>4. TEAM RULES</h2>
-    <div class="rule"><strong>4.1</strong> Each team must have exactly <strong>5 registered members from the same class</strong>.</div>
-    <div class="rule"><strong>4.2</strong> The same 5 registered members must participate in <strong>all three competitions</strong>.</div>
-    <div class="rule"><strong>4.3</strong> Team members cannot be changed between competitions.</div>
-    <div class="rule"><strong>4.4</strong> All team members are expected to contribute to the competitions and understand the work presented by their team.</div>
-    <div class="rule"><strong>4.5</strong> Team members must follow the instructions given by the Team Leader and Organizing Committee during competition activities.</div>
-  </section>
+            <div class="section-number">
+                02
+            </div>
 
-  <section>
-    <h2>5. PARTICIPANT REQUIREMENTS</h2>
-    <p>Participants are required to bring:</p>
-    <ul>
-      <li>College/Student ID Card</li>
-      <li>Mobile Phone</li>
-      <li>Laptop and Charger</li>
-      <li>Internet Connection</li>
-      <li>Required Software</li>
-    </ul>
-    <div class="rule"><strong>5.1</strong> Participants are responsible for the proper functioning and readiness of their personal devices.</div>
-    <div class="rule"><strong>5.2</strong> Participants must ensure that required software is installed before the competition where applicable.</div>
-    <div class="rule"><strong>5.3</strong> The Organizing Committee is not responsible for problems caused by a participant's personal device, software, files, or charger.</div>
-  </section>
+            <h2>
+                GENERAL RULES
+            </h2>
 
-  <section>
-    <h2>6. TECHNOVA</h2>
-    <h3>TECHNICAL CHALLENGE — TechQuiz + DebugX</h3>
-    <div class="rule"><strong>6.1</strong> TECHNOVA consists of two components: <strong>TechQuiz</strong> and <strong>DebugX</strong>.</div>
-    <div class="rule"><strong>6.2</strong> Participants must follow the instructions provided before each component begins.</div>
-    <div class="rule"><strong>6.3</strong> The time limit, question format, permitted resources, and scoring method will be announced by the Organizing Committee.</div>
-    <div class="rule"><strong>6.4</strong> Participants must complete each task within the specified time.</div>
-    <div class="rule"><strong>6.5</strong> The evaluation will be conducted according to the rules announced for TECHNOVA.</div>
-  </section>
+        </div>
 
-  <section>
-    <h2>7. TECHNOVA — TECHQUIZ</h2>
-    <div class="rule"><strong>7.1</strong> TechQuiz will test participants' technical and computer-related knowledge.</div>
-    <div class="rule"><strong>7.2</strong> Questions may cover programming, databases, networking, operating systems, cybersecurity, artificial intelligence, algorithms, web technologies, and other relevant technical subjects.</div>
-    <div class="rule"><strong>7.3</strong> Participants must submit their answers within the specified time.</div>
-    <div class="rule"><strong>7.4</strong> Participants must not communicate with other teams during restricted quiz rounds.</div>
-    <div class="rule"><strong>7.5</strong> Mobile phones, internet access, AI tools, notes, or other resources may be restricted according to the rules announced before the round.</div>
-  </section>
+        <ol>
 
-  <section>
-    <h2>8. TECHNOVA — DEBUGX</h2>
-    <div class="rule"><strong>8.1</strong> DebugX will test participants' ability to identify and correct programming errors.</div>
-    <div class="rule"><strong>8.2</strong> Problems may include syntax, logical, runtime, output, or algorithmic errors.</div>
-    <div class="rule"><strong>8.3</strong> Participants must solve the assigned debugging problems within the specified time.</div>
-    <div class="rule"><strong>8.4</strong> Solutions will be evaluated based on correctness and the criteria announced for the round.</div>
-    <div class="rule"><strong>8.5</strong> Participants may be required to explain their solution or correction to the judges.</div>
-  </section>
+            <li>
+                All participants must follow the instructions issued
+                by the Organizing Committee.
+            </li>
 
-  <section>
-    <h2>9. PROJECTX</h2>
-    <h3>IDEA → PROJECT → PRESENTATION</h3>
-    <div class="rule"><strong>9.1</strong> PROJECTX requires each team to develop and present a <strong>technology-based project</strong> with a clearly defined problem, proposed solution, and technical implementation.</div>
-    <div class="rule"><strong>9.2</strong> Projects may involve areas such as <strong>Web Development, Mobile Applications, Artificial Intelligence, Machine Learning, Cybersecurity, Automation, IoT, Software Applications, Database Systems</strong>, or other relevant technology-based solutions.</div>
-    <div class="rule"><strong>9.3</strong> Teams must be able to explain their project's <strong>idea, purpose, features, technology stack, implementation, and practical applications</strong>.</div>
-    <div class="rule"><strong>9.4</strong> Teams must bring all required <strong>project files, source code, devices, software, and supporting materials</strong> and ensure that the project is ready for demonstration. Teams are advised to maintain a backup of important project files.</div>
-    <div class="rule"><strong>9.5</strong> Each team must present and demonstrate its project within the <strong>time limit announced by the Organizing Committee</strong>. The presentation should clearly cover the <strong>IDEA → PROJECT → PRESENTATION</strong> flow.</div>
-    <div class="rule"><strong>9.6</strong> Judges may ask questions regarding the project's <strong>architecture, programming, database, algorithms, security, implementation, limitations, and future improvements</strong>.</div>
-    <div class="rule"><strong>9.7</strong> Judges may request a <strong>live demonstration</strong> of specific features or ask any team member to explain the work presented.</div>
-    <div class="rule"><strong>9.8</strong> Failure to demonstrate or explain a claimed feature may affect the evaluation according to the announced criteria.</div>
-    <div class="rule"><strong>9.9</strong> The project must not contain <strong>unlawful, harmful, or inappropriate content</strong> and must comply with all requirements announced by the Organizing Committee.</div>
-    <div class="rule"><strong>9.10</strong> Exceeding the allotted presentation time or failing to follow the announced PROJECTX requirements may result in a penalty according to the competition rules.</div>
-  </section>
+            <li>
+                Participants must follow the specified time limits
+                for each competition.
+            </li>
 
-  <section>
-    <h2>10. TECHTALKX</h2>
-    <h3>TECHNICAL COMMUNICATION — Technical Talk + Tech Defence + Q&amp;A</h3>
-    <div class="rule"><strong>10.1</strong> TECHTALKX evaluates participants' <strong>technical knowledge, communication, presentation skills, and ability to respond to technical questions</strong>.</div>
-    <div class="rule"><strong>10.2</strong> The selected topic must be <strong>technically relevant</strong> and must comply with the requirements announced by the Organizing Committee.</div>
-    <div class="rule"><strong>10.3</strong> The presentation should clearly explain the <strong>introduction, technical concepts, working/practical applications, advantages, limitations, and conclusion</strong> of the selected topic.</div>
-    <div class="rule"><strong>10.4</strong> Participants may use <strong>presentation slides or other approved visual aids</strong>. All presentation content must be relevant to the selected topic, and appropriate sources or references should be acknowledged where applicable.</div>
-    <div class="rule"><strong>10.5</strong> Participants must complete the <strong>Technical Talk within the time limit</strong> announced by the Organizing Committee.</div>
-    <div class="rule"><strong>10.6</strong> After the Technical Talk, the judges may conduct a <strong>Tech Defence and Q&amp;A session</strong>.</div>
-    <div class="rule"><strong>10.7</strong> Judges may ask questions about the presented topic, including <strong>technical concepts, working principles, applications, advantages, limitations, practical examples, and future developments</strong>.</div>
-    <div class="rule"><strong>10.8</strong> Participants must provide <strong>clear, relevant, and technically accurate answers</strong>. Judges may ask follow-up questions or request further explanation.</div>
-    <div class="rule"><strong>10.9</strong> Participants must demonstrate genuine understanding of the topic and should not merely read the presentation material.</div>
-    <div class="rule"><strong>10.10</strong> The Technical Talk, Tech Defence, and Q&amp;A will be evaluated according to the <strong>criteria announced by the Organizing Committee</strong>.</div>
-    <div class="rule"><strong>10.11</strong> Participants must maintain <strong>professional communication and respectful conduct</strong> throughout the presentation and Q&amp;A session.</div>
-    <div class="rule"><strong>10.12</strong> Exceeding the allotted time or failing to follow the announced TECHTALKX requirements may result in a penalty according to the competition rules.</div>
-  </section>
+            <li>
+                Competition procedures, questions, tasks, and technical
+                requirements will be provided by the Organizing Committee.
+            </li>
 
-  <section>
-    <h2>11. DISQUALIFICATION</h2>
-    <div class="rule"><strong>11.1</strong> Cheating or plagiarism.</div>
-    <div class="rule"><strong>11.2</strong> Providing false or misleading registration information.</div>
-    <div class="rule"><strong>11.3</strong> Using unauthorized assistance or resources.</div>
-    <div class="rule"><strong>11.4</strong> Serious misconduct or deliberate disruption of the event.</div>
-    <div class="rule"><strong>11.5</strong> Unauthorized access, tampering, or interference with competition systems.</div>
-  </section>
+            <li>
+                Participants must follow the rules and procedures
+                applicable to their respective competition.
+            </li>
 
-  <section>
-    <h2>12. CERTIFICATES &amp; PRIZES</h2>
-    <div class="rule"><strong>12.1</strong> Certificates will be awarded according to the official event policy.</div>
-    <div class="rule"><strong>12.2</strong> Prizes will be awarded to the announced <strong>Winners and Runners-Up</strong>.</div>
-    <div class="rule"><strong>12.3</strong> Prize distribution will take place at the designated time and venue.</div>
-    <div class="rule"><strong>12.4</strong> Participants must follow the instructions provided during the certificate and prize distribution.</div>
-    <div class="rule"><strong>12.5</strong> Prize-related matters will be handled by the Organizing Committee according to the approved event arrangements.</div>
-  </section>
+            <li>
+                The decision of the Quiz Master/Judges and Organizing
+                Committee regarding evaluation and results will be final.
+            </li>
 
-  <section>
-    <h2>13. ORGANIZING COMMITTEE</h2>
-    <div class="rule"><strong>13.1</strong> The Organizing Committee is responsible for the overall conduct of <strong>TECHVERSE 2K26</strong>.</div>
-    <div class="rule"><strong>13.2</strong> The Committee will announce the specific rules and procedures for each competition.</div>
-    <div class="rule"><strong>13.3</strong> The Committee may issue instructions or clarifications when necessary.</div>
-    <div class="rule"><strong>13.4</strong> Participants must comply with all officially announced instructions.</div>
-    <div class="rule"><strong>13.5</strong> The Committee will maintain the official records of the event.</div>
-  </section>
+        </ol>
 
-  <section>
-    <h2>14. FINAL RULE</h2>
-    <div class="final-rule">
-      The rules and regulations announced by the Organizing Committee for each competition are final and must be followed by all participants. The decision of the staff/judges regarding the competition results is final. The Organizing Committee reserves the right to interpret, clarify, modify, or enforce the rules when necessary for the smooth conduct of TECHVERSE 2K26.
     </div>
-  </section>
 
-</main>
+</section>
 
-<footer>
-  TECHVERSE 2K26 • Department of Computer and Information Science • Annamalai University
-</footer>
+
+<!-- =====================================================
+     TECHNOVA
+===================================================== -->
+
+<section class="page">
+
+    <div class="section">
+
+        <div class="section-title">
+
+            <div class="section-number">
+                03
+            </div>
+
+            <h2>
+                TECHNOVA
+            </h2>
+
+        </div>
+
+
+        <p>
+            <strong>TECHNOVA</strong> is a Technical Challenge
+            consisting of <strong>TechQuiz</strong> and
+            <strong>DebugX</strong>.
+        </p>
+
+        <p>
+            The same registered team members must participate
+            in both components.
+        </p>
+
+        <p>
+            Teams must follow the instructions and time limits
+            announced by the Organizing Committee.
+        </p>
+
+        <p>
+            All questions, tasks, and technical requirements will
+            be provided by the Organizing Committee.
+        </p>
+
+
+        <!-- TECHQUIZ -->
+
+        <h3>
+            3.1 TECHQUIZ — Official Rules
+        </h3>
+
+        <div class="callout">
+
+            <strong>Total Duration:</strong>
+            1 Hour
+
+            &nbsp; | &nbsp;
+
+            <strong>Total Rounds:</strong>
+            5
+
+        </div>
+
+
+        <h4>
+            Quiz Format
+        </h4>
+
+        <ul>
+
+            <li>
+                Rounds 1–4: Regular Quiz Rounds.
+            </li>
+
+            <li>
+                Round 5: Rapid Quiz.
+            </li>
+
+        </ul>
+
+
+        <h4>
+            Round Names
+        </h4>
+
+        <ol>
+
+            <li>
+                Round 1 — General Quiz
+            </li>
+
+            <li>
+                Round 2 — Technical Quiz
+            </li>
+
+            <li>
+                Round 3 — Visual Quiz
+            </li>
+
+            <li>
+                Round 4 — Challenge Quiz
+            </li>
+
+            <li>
+                Round 5 — Rapid Quiz
+            </li>
+
+        </ol>
+
+
+        <h4>
+            Team Arrangement
+        </h4>
+
+        <ol>
+
+            <li>
+                Participating teams will be randomly shuffled.
+            </li>
+
+            <li>
+                Each team will be assigned a team number by
+                the Organizing Committee.
+            </li>
+
+            <li>
+                Teams must occupy the position corresponding
+                to their assigned number.
+            </li>
+
+            <li>
+                The assigned team number will remain the same
+                throughout the quiz.
+            </li>
+
+        </ol>
+
+
+        <h4>
+            Question Procedure &amp; Marking
+        </h4>
+
+        <ol>
+
+            <li>
+                Every team will receive one question at a time.
+            </li>
+
+            <li>
+                The designated team will have
+                <strong>1 minute</strong> to answer.
+            </li>
+
+            <li>
+                If the team does not answer within 1 minute,
+                the question will be passed to the next team.
+            </li>
+
+            <li>
+                The next team will have
+                <strong>30 seconds</strong>
+                to answer the passed question.
+            </li>
+
+        </ol>
+
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Answer Situation
+                    </th>
+
+                    <th>
+                        Marks
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Correct answer to the originally
+                        assigned question
+                    </td>
+
+                    <td>
+                        <strong>1 Mark</strong>
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+                        Correct answer to a passed question
+                    </td>
+
+                    <td>
+                        <strong>0.5 Mark</strong>
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+                        Incorrect answer
+                    </td>
+
+                    <td>
+                        <strong>0 Mark</strong>
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+
+        <!-- DEBUGX -->
+
+        <h3>
+            3.2 DEBUGX — Official Rules
+        </h3>
+
+        <div class="callout">
+
+            <strong>Total Duration:</strong>
+            30 Minutes
+
+            &nbsp; | &nbsp;
+
+            <strong>Total Questions:</strong>
+            6
+
+        </div>
+
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Questions
+                    </th>
+
+                    <th>
+                        Difficulty Level
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Questions 1–2
+                    </td>
+
+                    <td>
+                        Beginner Level
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+                        Questions 3–4
+                    </td>
+
+                    <td>
+                        Intermediate Level
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+                        Questions 5–6
+                    </td>
+
+                    <td>
+                        Advanced Level
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+
+        <ol>
+
+            <li>
+                Each question will contain a programming error
+                or bug that teams must identify and correct.
+            </li>
+
+            <li>
+                Teams must submit the corrected code within
+                the allotted competition time.
+            </li>
+
+            <li>
+                The detailed marking and submission procedure
+                will be announced by the Organizing Committee.
+            </li>
+
+        </ol>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     PROJECTX
+===================================================== -->
+
+<section class="page">
+
+    <div class="section">
+
+        <div class="section-title">
+
+            <div class="section-number">
+                04
+            </div>
+
+            <h2>
+                PROJECTX
+            </h2>
+
+        </div>
+
+
+        <h3>
+            4.1 Title Approval &amp; Registration
+        </h3>
+
+
+        <div class="rule-card">
+
+            <div class="rule-head">
+                Mandatory Prior Approval
+            </div>
+
+            <p>
+                All participating teams must submit their chosen
+                project title to the PROJECTX Organizing Committee
+                for prior approval before starting development.
+            </p>
+
+        </div>
+
+
+        <div class="rule-card">
+
+            <div class="rule-head">
+                Title Uniqueness
+            </div>
+
+            <p>
+                Title approvals are granted on a
+                <strong>first-come, first-served basis</strong>
+                to prevent duplicate topics.
+            </p>
+
+        </div>
+
+
+        <h3>
+            4.2 Presentation &amp; Submission Requirements
+        </h3>
+
+
+        <div class="rule-card">
+
+            <div class="rule-head">
+                Slide Limit
+            </div>
+
+            <p>
+                Final project presentations must strictly not
+                exceed a maximum of <strong>15 slides</strong>.
+                Slides beyond the 15-slide limit will not be
+                considered during judging.
+            </p>
+
+        </div>
+
+
+        <div class="rule-card">
+
+            <div class="rule-head">
+                Mandatory Slide Structure
+            </div>
+
+            <p>
+                Submissions must follow the required
+                5-section framework.
+            </p>
+
+        </div>
+
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Section
+                    </th>
+
+                    <th>
+                        Section Name
+                    </th>
+
+                    <th>
+                        Required Content
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        <strong>Section 1</strong>
+                    </td>
+
+                    <td>
+                        <strong>Basic Introduction</strong>
+                    </td>
+
+                    <td>
+                        Overview of the project, core concept,
+                        and its primary purpose.
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        <strong>Section 2</strong>
+                    </td>
+
+                    <td>
+                        <strong>Scope of Work</strong>
+                    </td>
+
+                    <td>
+                        Detailed problem statement definition
+                        and measurable project objectives.
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        <strong>Section 3</strong>
+                    </td>
+
+                    <td>
+                        <strong>Project Details</strong>
+                    </td>
+
+                    <td>
+                        Screen designs/UI mockups, technical
+                        architecture, flow diagrams, and key
+                        implementation challenges faced.
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        <strong>Section 4</strong>
+                    </td>
+
+                    <td>
+                        <strong>Outcomes</strong>
+                    </td>
+
+                    <td>
+                        Final project output, working
+                        proof-of-concept, and social/industry impact.
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        <strong>Section 5</strong>
+                    </td>
+
+                    <td>
+                        <strong>Conclusion</strong>
+                    </td>
+
+                    <td>
+                        Summary of accomplishments, project
+                        limitations, and planned future enhancements.
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+
+        <h3>
+            4.3 Evaluation &amp; Judging Criteria
+        </h3>
+
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Evaluation Area
+                    </th>
+
+                    <th>
+                        Criteria
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        <strong>Technical Execution</strong>
+                    </td>
+
+                    <td>
+                        Technical complexity, architecture design,
+                        and working implementation.
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+                        <strong>Presentation Quality</strong>
+                    </td>
+
+                    <td>
+                        Clarity, adherence to the 15-slide limit,
+                        and structure compliance.
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+                        <strong>Impact &amp; Innovation</strong>
+                    </td>
+
+                    <td>
+                        Originality of the solution and tangible
+                        contribution to society.
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     PROJECTX DOMAINS
+===================================================== -->
+
+<section class="page">
+
+    <div class="section">
+
+        <div class="section-title">
+
+            <div class="section-number">
+                05
+            </div>
+
+            <h2>
+                PROJECTX — DOMAINS &amp; TITLES
+            </h2>
+
+        </div>
+
+
+        <!-- WEB -->
+
+        <div class="domain">
+
+            <h4>
+                WEB, CLOUD &amp; PRODUCTIVITY
+            </h4>
+
+            <p>
+                <strong>CampusVoice AI</strong> —
+                Smart AI-Powered Complaint &amp; Resolution
+                Engine for Universities
+            </p>
+
+            <p>
+                <strong>SkillPulse</strong> —
+                Interactive E-Learning Platform with
+                Dynamic Progress Analytics
+            </p>
+
+            <p>
+                <strong>WorkFlex</strong> —
+                Decentralized Freelance Marketplace
+                &amp; Talent Matcher
+            </p>
+
+            <p>
+                <strong>FeedbackLoop</strong> —
+                Automated Customer Insights &amp;
+                Sentiment Analytics Engine
+            </p>
+
+            <p>
+                <strong>CloudZero</strong> —
+                Serverless Computing &amp; Event-Driven
+                Workload Orchestrator
+            </p>
+
+        </div>
+
+
+        <!-- AI -->
+
+        <div class="domain">
+
+            <h4>
+                AI, ML &amp; NLP
+            </h4>
+
+            <p>
+                <strong>ReviewPulse</strong> —
+                Aspect-Based Sentiment Analysis Engine
+                for Product Reviews
+            </p>
+
+            <p>
+                <strong>HealthAssist AI</strong> —
+                Conversational Healthcare &amp;
+                Triage Assistant
+            </p>
+
+            <p>
+                <strong>FactShield</strong> —
+                Machine Learning-Driven Fake News
+                &amp; Misinformation Classifier
+            </p>
+
+            <p>
+                <strong>FedGen AI</strong> —
+                Privacy-Preserving Federated Deep Learning
+                Framework for Generative AI
+            </p>
+
+        </div>
+
+
+        <!-- COMPUTER VISION -->
+
+        <div class="domain">
+
+            <h4>
+                COMPUTER VISION &amp; IoT
+            </h4>
+
+            <p>
+                <strong>PlateIQ</strong> —
+                Real-Time Automatic License Plate
+                Recognition (ALPR) System
+            </p>
+
+            <p>
+                <strong>SafeGuard AI</strong> —
+                Real-Time Fall &amp; System Fault
+                Detection Platform
+            </p>
+
+            <p>
+                <strong>VisionGuard</strong> —
+                High-Accuracy Face &amp; Mask
+                Identification System
+            </p>
+
+        </div>
+
+
+        <!-- CYBERSECURITY -->
+
+        <div class="domain">
+
+            <h4>
+                CYBERSECURITY &amp; NETWORKS
+            </h4>
+
+            <p>
+                <strong>PhishCatch</strong> —
+                ML-Powered Real-Time Phishing Website Detector
+            </p>
+
+            <p>
+                <strong>NetRadar</strong> —
+                Network Traffic Analyzer &amp;
+                Anomaly Detection System
+            </p>
+
+            <p>
+                <strong>LostTrack</strong> —
+                Smart Lost &amp; Found Matcher with
+                Theft Anomaly Detection
+            </p>
+
+        </div>
+
+
+        <!-- BLOCKCHAIN -->
+
+        <div class="domain">
+
+            <h4>
+                BLOCKCHAIN &amp; CIVIC TECH
+            </h4>
+
+            <p>
+                <strong>BlockLand</strong> —
+                Tamper-Proof Land Register Management
+                on Blockchain
+            </p>
+
+            <p>
+                <strong>CampusNav</strong> —
+                Intelligent Campus Navigation using
+                Dijkstra/A* Pathfinding
+            </p>
+
+            <p>
+                <strong>LifeAlert</strong> —
+                Multi-Channel Emergency Alert &amp;
+                Priority Response System
+            </p>
+
+            <p>
+                <strong>EcoWater</strong> —
+                Smart Wastewater Monitoring &amp;
+                Treatment Optimization System
+            </p>
+
+            <p>
+                <strong>FoodLoop</strong> —
+                Intelligent Food Waste Reduction &
+                Redistribution System
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     TECHTALKX
+===================================================== -->
+
+<section class="page">
+
+    <div class="section">
+
+        <div class="section-title">
+
+            <div class="section-number">
+                06
+            </div>
+
+            <h2>
+                TECHTALKX — OFFICIAL RULES
+            </h2>
+
+        </div>
+
+
+        <div class="callout">
+
+            <strong>Team Limit:</strong>
+            A maximum of 5 teams can participate.
+
+        </div>
+
+
+        <h3>
+            Team Members
+        </h3>
+
+        <p>
+            Each team must have <strong>5 members</strong>.
+            The team members are subject to the overall
+            TECHVERSE team rule stated in the Important Rules section.
+        </p>
+
+
+        <h3>
+            Topic Domain
+        </h3>
+
+        <p>
+            The Technical Talk must be based on
+            <strong>Computer Science and Technology</strong>.
+        </p>
+
+
+        <p>
+            The specified domains are:
+        </p>
+
+        <ul>
+
+            <li>
+                <strong>AI</strong>
+            </li>
+
+            <li>
+                <strong>Cybersecurity</strong>
+            </li>
+
+            <li>
+                <strong>Cloud Computing</strong>
+            </li>
+
+            <li>
+                <strong>IoT</strong>
+            </li>
+
+            <li>
+                <strong>Quantum Computing</strong>
+            </li>
+
+        </ul>
+
+
+        <h3>
+            Topic &amp; Time
+        </h3>
+
+        <p>
+            Each team must choose one topic from the given topics
+            and complete the <strong>Technical Talk within
+            12 minutes</strong>.
+        </p>
+
+        <p>
+            <strong>All 5 members must participate.</strong>
+        </p>
+
+
+        <h3>
+            Final Decision
+        </h3>
+
+        <p>
+            The rules and instructions given by the Organizing
+            Committee are final and must be followed by all participants.
+        </p>
+
+    </div>
+
+
+    <!-- PARTICIPANT RESPONSIBILITIES -->
+
+    <div class="section">
+
+        <div class="section-title">
+
+            <div class="section-number">
+                07
+            </div>
+
+            <h2>
+                PARTICIPANT RESPONSIBILITIES
+            </h2>
+
+        </div>
+
+
+        <ol>
+
+            <li>
+                Participants must follow the instructions
+                of the Organizing Committee.
+            </li>
+
+            <li>
+                Participants must follow the instructions
+                of the respective competition coordinators.
+            </li>
+
+            <li>
+                Teams must participate according to the schedule
+                communicated by the organizers.
+            </li>
+
+            <li>
+                Participants must complete their respective
+                competition activities within the specified
+                time limits.
+            </li>
+
+            <li>
+                Teams must follow all competition-specific rules.
+            </li>
+
+            <li>
+                Participants must maintain formal attire
+                throughout the event.
+            </li>
+
+            <li>
+                Participants must cooperate with the Staff,
+                Judges, Organizing Committee, and Coordinators.
+            </li>
+
+            <li>
+                Participants must accept the final decisions
+                of the Staff/Judges regarding competition results.
+            </li>
+
+        </ol>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     EVENT COORDINATION
+===================================================== -->
+
+<section class="page">
+
+    <div class="section">
+
+        <div class="section-title">
+
+            <div class="section-number">
+                08
+            </div>
+
+            <h2>
+                EVENT COORDINATION TEAM
+            </h2>
+
+        </div>
+
+
+        <div class="coord">
+
+
+            <h3>
+                Event Secretary
+            </h3>
+
+            <p>
+                <strong>Mr. C. Pradheep</strong>
+            </p>
+
+
+            <h3>
+                Competition Coordinators
+            </h3>
+
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>
+                            Competition
+                        </th>
+
+                        <th>
+                            Staff In-Charge
+                        </th>
+
+                        <th>
+                            Student Coordinator
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+
+                <tbody>
+
+                    <tr>
+
+                        <td>
+                            <strong>TECHNOVA</strong>
+                        </td>
+
+                        <td>
+                            ____________________________
+                        </td>
+
+                        <td>
+                            ____________________________
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>
+                            <strong>PROJECTX</strong>
+                        </td>
+
+                        <td>
+                            ____________________________
+                        </td>
+
+                        <td>
+                            ____________________________
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>
+                            <strong>TECHTALKX</strong>
+                        </td>
+
+                        <td>
+                            ____________________________
+                        </td>
+
+                        <td>
+                            ____________________________
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+
+            <h3>
+                Coordinator Team
+            </h3>
+
+
+            <p>
+                <strong>Student Coordinator</strong>
+            </p>
+
+
+            <p>
+                ____________________________________________________________
+            </p>
+
+
+            <h4>
+                Responsibilities
+            </h4>
+
+
+            <p>
+                Registration • Technical Support • Venue &amp; Stage •
+                Hospitality • Documentation &amp; Photography •
+                Certificates • Results &amp; Records •
+                Discipline &amp; Participant Coordination
+            </p>
+
+
+        </div>
+
+
+        <!-- SIGNATURE -->
+
+        <div class="signature">
+
+            <div class="line">
+
+                <strong>
+                    Event Secretary
+                </strong>
+
+                <br>
+
+                Mr. C. Pradheep
+
+            </div>
+
+
+            <div class="line">
+
+                <strong>
+                    Department / Organizing Committee
+                </strong>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer">
+
+        TECHVERSE 2K26 • Official Competition Rules •
+        Annamalai University •
+        Department of Computer and Information Science
+
+    </div>
+
+</section>
 
 </body>
 </html>
-
